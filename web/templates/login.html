@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PREDICTION</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/loginstyle.css') }}">
+    <script src="https://kit.fontawesome.com/c8b2778b34.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <header>
+        <nav class="bottom-bar">
+            <div class="logo">
+                <img src="\static\css\cancerquest-low-resolution-logo-black-on-transparent-background.png" alt="Logo" class="logoimg">
+            </div>
+            <ul class="bottom-bar__list">
+              <div class="bottom-bar__active-indicator"></div>
+              <li class="bottom-bar__link selected"><span class="material-symbols-outlined"><a href="/">
+                  <i class="fa-solid fa-house"></i></a>
+                </span>Home</i>
+              <li class="bottom-bar__link"><span class="material-symbols-outlined"><a href="/getstarted">
+                  <i class="fa-solid fa-magnifying-glass"></i></a>
+                </span>Prediction</li>
+              <li class="bottom-bar__link"><span class="material-symbols-outlined"><a href="/awarness">
+                  <i class="fa-solid fa-phone"></i></a>
+                </span>AWARENESS</li>
+              <li class="bottom-bar__link"><span class="material-symbols-outlined"><a href="/login">
+                  <i class="fa-solid fa-door-open"></i></a>
+                </span>Login</li>
+              <li class="bottom-bar__link"><span class="material-symbols-outlined"><a href="/signup">
+                  <i class="fa-solid fa-right-to-bracket"></i></a>
+                </span>Sign In</li>
+            </ul>
+       
+    </nav>
+    </header>
+            
+        
+  
+    <div class="wrapper">
+      <div class="header-text">LOGIN</div>
+      <form method="post" action="/login_validation">
+        <p>USERNAME:</p>
+        <input type="text" name="name">
+        <p>PASSWORD</p>
+        <input type="password" name="pass">
+        <br><br>
+        <input type="submit" value="login">
+      
+        <p>Not a Member?<a href="/signup">Create Account</a></p>
+
+      </form>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="\static\css\script.js"> </script>
+  </body>
+</html>

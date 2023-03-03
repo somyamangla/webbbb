@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/static/css/breast.css">
+    <title>BREAST CANCER WEBSITE</title>
+  </head>
+
+  <body>
+    <section>
+        <div class="UI">
+        </div>
+        <header>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+          <nav class="navbar">
+            <ul>
+            <img class="logo" src="C:\Users\SOMNATH\Dropbox\My PC (SWAP)\Downloads\rsz_logoimage.png" ALT="align box">
+            <a href="/logout"><i class="fa fa-sign-out"></i> Sign Out </a>
+            <a href="#"><i class="fa fa-product-hunt"></i> Prediction</a>
+            <a href="#"><i class="fa fa-user-md"></i> Doctor</a>
+            <a href="#"><i class="fa fa-user"></i> Profile</a>
+            <a class="active" href="/getstarted"><i class="fa fa-fw fa-home"></i> Home</a>
+            </ul>
+          </nav>
+        </header>    
+
+        <div class="bg-img">
+            <form action="/pred" method="POST" class="container">
+                <h1>Breast Cancer Prediction</h1>
+                <p>Please Fill in the Required Details :</p><br>
+         First value : <input type="text" name='a' placeholder="" required="required"><br>
+         Second value : <input type="text" name='b' placeholder="" required="required"><br>
+         Third value :  <input type="text" name='c' placeholder="" required="required"><br>
+         Fourth value : <input type="text" name='d' placeholder="" required="required"><br>
+         Fifth value :  <input type="text" name='e' placeholder="" required="required"><br>
+         Sixth value :  <input type="text" name='f' placeholder="" required="required"><br>
+         Seventh value : <input type="text" name='g' placeholder="" required="required"><br>
+         Eigth value : <input type="text" name='h' placeholder="" required="required"><br>
+         Ninth value :  <input type="text" name='i' placeholder="" required="required"><br>
+         Tenth value :  <input type="text" name='j' placeholder="" required="required"><br>
+         <button type="submit" class="btn">PREDICT</button>
+         {{prediction_text}}
+        
+     </form>
+     <br>
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

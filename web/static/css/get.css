@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*-------------------------------------------------------------------------NAVIGATION BAR------------------------------------------------------------------------------*/
+
+.navbar 
+{
+  background-image: linear-gradient(15deg, black 0%, rgb(3, 8, 105) 120%);
+}
+
+.navbar ul
+{
+  overflow: auto;
+}
+  
+/* Navbar links */
+
+
+
+.it 
+{
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 10px;
+
+}
+  
+/* Navbar links on mouse-over */
+.navbar a:hover 
+{
+  background-color: rgba(237,32,123,255);
+}
+  
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) 
+{
+  .navbar a 
+  {
+    float: none;
+    display: block;
+  }
+}
+
+.navbar input
+{
+  border: 2px black;
+  border-radius: 20px;
+  padding: 30px 300px;
+}
+
+.logo
+{ 
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 150px;
+  height: auto; 
+}
